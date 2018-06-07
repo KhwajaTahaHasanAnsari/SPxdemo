@@ -4,8 +4,7 @@ export interface IHelloWorldWebPartProps {
     description: string;
     test: string;
     test1: boolean;
-    test2: any;
-    string: any;
+    test2: string;
 }
 export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorldWebPartProps> {
     render(): void;

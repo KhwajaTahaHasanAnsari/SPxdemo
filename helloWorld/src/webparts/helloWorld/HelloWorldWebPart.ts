@@ -13,7 +13,7 @@ export interface IHelloWorldWebPartProps {
   description: string;
   test : string ;
   test1 :boolean;
-  test2; string ;
+  test2 :string ;
 }
 
 export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorldWebPartProps> {
