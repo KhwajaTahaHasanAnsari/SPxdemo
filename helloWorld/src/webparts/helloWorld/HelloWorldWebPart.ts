@@ -11,6 +11,9 @@ import * as strings from 'HelloWorldWebPartStrings';
 
 export interface IHelloWorldWebPartProps {
   description: string;
+  test : string ;
+  test1 :boolean;
+  test2; string ;
 }
 
 export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorldWebPartProps> {
@@ -24,6 +27,8 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
               <span class="${ styles.title }">Welcome to SharePoint!</span>
               <p class="${ styles.subTitle }">Customize SharePoint experiences using Web Parts.</p>
               <p class="${ styles.description }">${escape(this.properties.description)}</p>
+              <p class="${ styles.description }">${escape(this.properties.test)}</p>
+              <p class= "${ styles.description}">loading from ${escape(this.context.pageContext.web.title)}</p>
               <a href="https://aka.ms/spfx" class="${ styles.button }">
                 <span class="${ styles.label }">Learn more</span>
               </a>
