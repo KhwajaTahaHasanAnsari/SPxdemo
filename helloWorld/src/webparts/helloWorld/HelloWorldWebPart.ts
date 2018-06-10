@@ -16,6 +16,16 @@ export interface IHelloWorldWebPartProps {
   test2 :string ;
 }
 
+export interface ISPList  {
+  value : ISPList[];
+}
+export interface ISPList{
+  Title :string ;
+   Id: string ;
+   description:string ;
+  
+}
+
 export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorldWebPartProps> {
 
   public render(): void {
