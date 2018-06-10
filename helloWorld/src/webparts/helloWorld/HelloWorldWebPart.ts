@@ -22,7 +22,8 @@ export interface ISPList  {
 export interface ISPList{
   Title :string ;
    Id: string ;
-   description:string ;
+  // value :string ;
+  // description:string ;
   
 }
 
