@@ -6,7 +6,7 @@ export interface IHelloWorldWebPartProps {
     test1: boolean;
     test2: string;
 }
-export interface ISPList {
+export interface ISPLists {
     value: ISPList[];
 }
 export interface ISPList {
